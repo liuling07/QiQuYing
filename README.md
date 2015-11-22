@@ -1,5 +1,5 @@
 # QiQuYing
-奇趣营客户端
+奇趣营客户端，一个完整的项目<br/>
 注：需要配合奇趣营服务端（接口服务）一起使用。[奇趣营客户端](https://github.com/liuling07/QiQuYingServer)
 
 # Screenshot

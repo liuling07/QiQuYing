@@ -4,24 +4,24 @@
 
 # Screenshot
 ###### 精选界面
-![image](https://raw.githubusercontent.com/liuling07/PhotoPicker/master/photo-picker-sample03.png)
+![image](https://raw.githubusercontent.com/liuling07/QiQuYing/master/images/jingxuan.png)
 <br/>
 ###### 趣事界面
-![image](https://raw.githubusercontent.com/liuling07/PhotoPicker/master/photo-picker-sample01.png)
+![image](https://raw.githubusercontent.com/liuling07/QiQuYing/master/images/qushi.png)
 
 ###### 趣图界面
-![image](https://raw.githubusercontent.com/liuling07/PhotoPicker/master/photo-picker-sample02.png)
+![image](https://raw.githubusercontent.com/liuling07/QiQuYing/master/images/qutu.png)
 <br/>
 ###### 美图界面
-![image](https://raw.githubusercontent.com/liuling07/PhotoPicker/master/photo-picker-sample02.png)
+![image](https://raw.githubusercontent.com/liuling07/QiQuYing/master/images/meitu.png)
 <br/>
 ###### 个人中心界面
-![image](https://raw.githubusercontent.com/liuling07/PhotoPicker/master/sample.gif)
+![image](https://raw.githubusercontent.com/liuling07/QiQuYing/master/images/user-center.png)
 <br/>
 
 # Usage
 首先需要将奇趣营服务端，部署到tomcat，参考这里[奇趣营客户端](https://github.com/liuling07/QiQuYingServer)，
-然后将commons包下面的RcpUri里面的BASEPATH路径的ip换为服务端部署后的ip即可。
+然后将commons包下面的RcpUri里面的BASEPATH路径的ip换为服务端部署后的ip即可。<br/>
 分享功能可以用，这是代码里面我把app key和secret key删了，你们需要自己到第三方平台申请，奇趣营支持的分享平台有
 微信、QQ、腾讯微博和新浪微博。
 

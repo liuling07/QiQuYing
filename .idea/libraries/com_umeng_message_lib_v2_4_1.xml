@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.umeng.message.lib_v2.4.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/com.umeng.message.lib_v2.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

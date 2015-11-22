@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全局 -->
+    <color name="main_color">#D43E37</color>
+    <color name="main_color_1">#B61F1B</color>
+    <color name="main_color_2">#cdf8dd</color>
+    <color name="main_color_3">#edfaf4</color>
+    <color name="big_title">#212121</color>
+    <color name="dark_grey">#757575</color>
+    <color name="dark_grey_1">#9D9D9D</color>
+    <color name="light_grey">#bdbdbd</color>
+    <color name="line_color">#e0e0e0</color>
+    <color name="transparent_line_color">#19000000</color>
+    <color name="bg_color">#f5f5f5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#8affffff</color>
+    <color name="black">#000000</color>
+    
+    <color name="bg_action_bar">#D43E37</color>
+    <color name="bg_action_bar_1">#ffffff</color>
+    
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    
+    <color name="category_tab_text">#ff707070</color>
+    <color name="category_tab_text_dark">#fffafafa</color>
+    <color name="category_tab_highlight_text">#fffafafa</color>
+    <color name="category_tab_highlight_text_dark">#ffd43d3d</color>
+    <color name="category_tab_highlight_bg">#ffd43d3d</color>
+    <color name="category_tab_highlight_dark_bg">#fffafafa</color>
+    
+    <color name="dialog_negative_bg_press">#ececec</color>
+    <color name="dialog_positive_bg_press">#bbf0cc</color>
+
+</resources>

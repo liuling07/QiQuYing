@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	<TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </TabWidget>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="@dimen/table_hight">
+        </FrameLayout>
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/table_hight"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:paddingTop="6dp"
+                android:id="@+id/all_tab"
+                style="@style/main_radio_botton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center"
+                android:drawableTop="@drawable/tab_jingxuan"
+                android:text="精选" />
+           <RadioButton
+                android:paddingTop="6dp"
+                android:id="@+id/qushi_tab"
+                style="@style/main_radio_botton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/tab_qushi"
+                android:text="趣事" />
+            <RadioButton
+                android:paddingTop="6dp"
+                android:id="@+id/qutu_tab"
+                style="@style/main_radio_botton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/tab_qutu"
+                android:text="趣图" />
+            <RadioButton
+                android:paddingTop="6dp"
+                android:id="@+id/meitu_tab"
+                style="@style/main_radio_botton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/tab_meitu"
+                android:text="美图" />
+            <RadioButton
+                android:paddingTop="6dp"
+                android:id="@+id/usercenter_tab"
+                style="@style/main_radio_botton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/tab_center"
+                android:text="我的" />
+        </RadioGroup>
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/radiogroup"
+            android:background="@color/transparent_line_color"/>
+    </RelativeLayout>
+
+</TabHost>

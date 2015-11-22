@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed -->
+    <item android:state_pressed="true" android:drawable="@drawable/qqweibo_pressed" />
+    
+    <item android:drawable="@drawable/qqweibo_normal"/>
+</selector>

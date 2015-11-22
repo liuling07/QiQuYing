@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BDAutoUpdateSDK_20150605_V1.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/BDAutoUpdateSDK_20150605_V1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

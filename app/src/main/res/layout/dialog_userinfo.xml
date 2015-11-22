@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/ct_progressdialog_bg"
+    android:paddingBottom="2dp"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:id="@+id/dialog_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/table_hight"
+        android:background="@drawable/ct_userinfo_selectdialog_title_bg"  >
+        <TextView
+            android:id="@+id/dialog_userinfo_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/qqy_18sp" >
+        </TextView>
+    </FrameLayout>
+
+    <ListView 
+        android:id="@+id/dialog_userinfo_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.5dp"
+        android:padding="1dp"
+	    android:divider="@color/line_color"
+	    android:listSelector="@drawable/layout_selector"
+        android:scrollbars="none"
+        android:overScrollMode="never" >
+        
+    </ListView>
+
+</LinearLayout>

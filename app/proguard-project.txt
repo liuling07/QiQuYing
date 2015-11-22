@@ -1,0 +1,184 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+#保持行信息，不加这个，崩溃的时候会出现unknow source,根据crash日志很难定位到错误位置。
+-keepattributes SourceFile,LineNumberTable
+
+-dontusemixedcaseclassnames  
+-dontskipnonpubliclibraryclasses  
+-verbose  
+-ignorewarnings  
+
+#-dontobfuscate 
+#-dontoptimize
+
+#引用包声明
+#-libraryjars libs/armeabi/libsmssdk.so
+#-libraryjars libs/armeabi/libweibosdkcore.so
+#-libraryjars libs/armeabi/libcocklogic.so
+#-libraryjars libs/armeabi/libtnet-2.0.17.1-agoo.so
+#-libraryjars libs/armeabi/libbspatch.so
+#-libraryjars libs/armeabi-v7a/libcocklogic.so
+#-libraryjars libs/armeabi-v7a/libsmssdk.so
+#-libraryjars libs/armeabi-v7a/libtnet-2.0.17.1-agoo.so
+#-libraryjars libs/armeabi-v7a/libweibosdkcore.so
+#-libraryjars libs/mips/libweibosdkcore.so
+#-libraryjars libs/x86/libweibosdkcore.so
+#-libraryjars libs/x86/libcocklogic.so
+#-libraryjars libs/x86/libtnet-2.0.17.1-agoo.so
+#-libraryjars libs/x86/libsmssdk.so
+
+#-libraryjars libs/Android_SDK_component.jar
+#-libraryjars libs/Android_SDK.jar
+#-libraryjars libs/android-async-http-1.4.6.jar
+#-libraryjars libs/fastjson-1.1.10.jar
+#-libraryjars libs/android-support-v4.jar
+#-libraryjars libs/commons-httpclient-3.0.1.jar
+#-libraryjars libs/gdt_mob_release_v4.4.479.jar
+#-libraryjars libs/libammsdk.jar
+#-libraryjars libs/open_sdk_r5043.jar
+#-libraryjars libs/qiniu-android-sdk-7.0.3.jar
+#-libraryjars libs/SMSSDK-1.3.0.jar
+#-libraryjars libs/MobLogCollector.jar
+#-libraryjars libs/MobTools.jar
+#-libraryjars libs/uk-co-senab-photoview.jar
+#-libraryjars libs/umeng-analytics-v5.5.3.jar
+#-libraryjars libs/weibosdkcore.jar
+#-libraryjars libs/xUtils-2.6.14.jar
+#-libraryjars libs/com.umeng.message.lib_v2.4.1.jar
+#-libraryjars libs/umeng-update-v2.6.0.1.jar
+
+#-keep public class * extends android.app.Fragment  
+#-keep public class * extends android.app.Activity
+#-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+#-keep public class * extends android.widget.BaseAdapter {*;}
+-keepnames class * implements java.io.Serializable     #比如我们要向activity传递对象使用了Serializable接口的时候，这时候这个类及类里面#的所有内容都不能混淆
+-keepclassmembers class * implements java.io.Serializable {*;}
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep public class * extends com.qiniu.**
+-keep public class * extends com.alibaba.**
+-keep public class * extends pl.**
+-keep class com.qiniu.** { *; }
+-keep class com.alibaba.** { *; }
+-keep class org.apache.** { *; }
+-keep class pl.** { *; }
+-keep class *.R$ { *; }
+
+#百度广告联盟
+-keep public class com.baidu.appx.**
+-keep public class com.baidu.appx.** { *; }
+-keepattributes *Annotation*,*Exceptions*,Signature
+
+#新浪微博
+-keep class com.sina.weibo.** {*;}
+
+#腾讯微博
+-keep class com.tencent.weibo.** {*;}
+
+#微信SDK
+-keep class com.tencent.mm.sdk.** {
+   *;
+}
+
+#广点通SDK
+-keep class com.qq.e.** { 
+    public protected *; 
+} 
+-keep class com.tencent.gdt.**{ 
+    public protected *; 
+}
+
+#友盟统计
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+-keep public class com.lling.qiqu.R$*{
+	public static final int *;
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+#mob短信SDK
+-keep class cn.smssdk.**{*;}
+-keep class com.mob.**{*;}
+
+#xutils相关
+-keep class com.lidroid.** { *; }                              #xutils包下所有类不要混淆，包括类里面的方法
+-keep class * extends java.lang.annotation.Annotation { *; }   #注解包下的所有内容不要混淆，ViewUitls有用到
+#避免activity配置的@onclick事件失效
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+   private void *(android.view.View);
+   public void *(android.widget.ImageView);
+   private void *(android.widget.ImageView);
+   public void *(android.widget.TextView);
+   private void *(android.widget.TextView);
+}
+
+#友盟推送相关
+-keep class com.umeng.message.** {
+        public <fields>;
+        public <methods>;
+}
+-keep class com.umeng.message.protobuffer.** {
+        public <fields>;
+        public <methods>;
+}
+-keep class com.squareup.wire.** {
+        public <fields>;
+        public <methods>;
+}
+-keep class org.android.agoo.impl.**{
+        public <fields>;
+        public <methods>;
+}
+-keep class org.android.agoo.service.**{*;}
+-keep class org.android.spdy.**{*;}
+

@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tu_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_hight"
+        android:background="@color/bg_action_bar_1" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/main_margin"
+            android:paddingRight="@dimen/main_margin"
+            android:src="@drawable/ic_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/sms_check"
+            android:textColor="@color/big_title"
+            android:textSize="@dimen/qqy_18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_line_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sms_hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/sms_hint"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/qqy_16sp" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_input"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="6dp" >
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/check_code_hint"
+            android:maxLength="6"
+            android:inputType="number"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:singleLine="true"
+            android:textColor="@color/big_title"
+            android:textSize="@dimen/qqy_16sp" />
+
+        <Button
+            android:id="@+id/resend_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sms_resend_selector"
+            android:enabled="false"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="@string/sms_timer"
+            android:textColor="@color/color_sms_resend"
+            android:textSize="@dimen/qqy_16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_code_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_login_regist_btn_selector"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="@string/next"
+        android:textColor="@color/white" />
+
+</LinearLayout>

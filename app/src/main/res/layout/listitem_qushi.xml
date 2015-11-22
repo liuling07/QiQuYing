@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 趣事listitem布局 -->
+<LinearLayout 
+    android:id="@+id/qushi_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg_qushi_item"
+	    android:padding="8dp" >
+	
+	    <LinearLayout
+	        android:id="@+id/user_info_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <com.lling.qiqu.ui.CircleImageView
+	            android:id="@+id/user_img"
+	            android:layout_width="35dp"
+	            android:layout_height="35dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/default_portrait" />
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="6dp"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/user_nick"
+	                style="@style/qqy_nickname"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="小明" />
+	
+	            <TextView
+	                android:id="@+id/create_date"
+	                style="@style/qqy_date"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="2dp"
+	                android:text="2015-6-14" />
+	        </LinearLayout>
+	    </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/qushi_content"
+	        style="@style/qushi_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/user_info_layout"
+	        android:layout_marginTop="8dp"
+	        android:lineSpacingExtra="4dp"
+	        android:text="" />
+	
+	    <!-- <View
+	        android:id="@+id/line"
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_below="@id/qushi_content"
+	        android:layout_marginBottom="6dp"
+	        android:layout_marginTop="6dp"
+	        android:background="@color/line_color" /> -->
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/qushi_content" >
+	        <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="match_parent">
+	            <com.lling.qiqu.ui.DrawableCenterTextView
+		            android:id="@+id/ding_tv"
+		            style="@style/dingcai"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:drawableLeft="@drawable/ding_selector"
+		            android:drawablePadding="4dp"
+		            android:gravity="center_vertical"
+		            android:paddingTop="6dp"
+		            android:paddingBottom="2dp"
+		            android:text="99" />
+	            <TextView 
+	                android:id="@+id/ding_add_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                style="@style/add_one_style"
+	                android:visibility="gone"
+	                android:text="+1"/>
+	        </RelativeLayout>
+	        <View 
+	            android:layout_width="1px"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="6dp"
+		        android:layout_marginBottom="2dp"
+	            android:background="@color/line_color"/>
+	        <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="match_parent">
+	            <com.lling.qiqu.ui.DrawableCenterTextView
+		            android:id="@+id/cai_tv"
+		            style="@style/dingcai"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:paddingTop="6dp"
+			        android:paddingBottom="2dp"
+		            android:drawableLeft="@drawable/cai_selector"
+		            android:drawablePadding="4dp"
+		            android:gravity="center_vertical"
+		            android:text="99" />
+	            <TextView 
+	                android:id="@+id/cai_add_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                style="@style/add_one_style"
+	                android:visibility="gone"
+	                android:text="+1"/>
+	        </RelativeLayout>
+	        <View 
+	            android:layout_width="1px"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="6dp"
+		        android:layout_marginBottom="2dp"
+	            android:background="@color/line_color"/>
+	        <com.lling.qiqu.ui.DrawableCenterTextView
+	            android:id="@+id/comment_tv"
+	            style="@style/dingcai"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:paddingTop="6dp"
+		        android:paddingBottom="2dp"
+	            android:layout_height="match_parent"
+	            android:drawableLeft="@drawable/comment_selector"
+	            android:drawablePadding="4dp"
+	            android:gravity="center_vertical"
+	            android:text="99" />
+	        <View 
+	            android:layout_width="1px"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="6dp"
+		        android:layout_marginBottom="2dp"
+	            android:background="@color/line_color"/>
+	        <com.lling.qiqu.ui.DrawableCenterTextView
+	            android:id="@+id/share_tv"
+	            style="@style/dingcai"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:paddingTop="6dp"
+		        android:paddingBottom="2dp"
+	            android:layout_height="match_parent"
+	            android:drawableLeft="@drawable/share_selector"
+	            android:gravity="center_vertical"/>
+	    </LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

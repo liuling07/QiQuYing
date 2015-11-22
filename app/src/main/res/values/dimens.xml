@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 字体大小定义 -->
+    <dimen name="qqy_10sp">10sp</dimen>
+    <dimen name="qqy_12sp">12sp</dimen>
+    <dimen name="qqy_14sp">14sp</dimen>
+    <dimen name="qqy_16sp">16sp</dimen>
+    <dimen name="qqy_18sp">18sp</dimen>
+    <dimen name="table_hight">48dp</dimen>
+    <dimen name="actionbar_hight">46dp</dimen>
+    <dimen name="main_margin">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

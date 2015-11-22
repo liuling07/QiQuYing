@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dialog_view" 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent" 
+	android:minWidth="280dip"
+	android:layout_height="@dimen/table_hight"
+	android:gravity="center_vertical"
+	android:paddingTop="8dp"
+	android:paddingBottom="8dp"
+	android:paddingLeft="20dp"
+	android:background="@drawable/ct_progressdialog_bg">
+	<ImageView 
+		android:id="@+id/dialog_img"
+		android:layout_width="36dp" 
+		android:layout_height="36dp" 
+		android:padding="2dip"
+		android:src="@drawable/p_ic_waiting" />
+	<TextView 
+	    android:id="@+id/dialog_content"
+		android:layout_width="wrap_content" 
+		android:layout_height="fill_parent"
+		android:textSize="@dimen/qqy_16sp"
+		android:gravity="center_vertical"
+		android:textColor="@color/dark_grey"
+		android:layout_marginLeft="10dp"
+		android:text="正在处理..."/>
+</LinearLayout>

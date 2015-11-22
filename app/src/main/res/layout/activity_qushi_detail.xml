@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <RelativeLayout 
+        android:id="@+id/tu_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_hight"
+        android:background="@color/bg_action_bar_1">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/main_margin"
+            android:paddingRight="@dimen/main_margin"
+            android:src="@drawable/ic_back_selector"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/qqy_18sp"
+            android:textColor="@color/big_title"
+            android:text="@string/detail"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color" >
+        <ProgressBar 
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="visible"/>
+        <com.lling.qiqu.ui.Scroll2BottomListenerScrollView 
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+	        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+	        android:scrollbarSize="3dp">
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="80dp">
+                <include
+                    layout="@layout/listitem_qushi"/>
+                <com.lling.qiqu.ui.LoadListView
+			        android:id="@+id/listview"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:listSelector="@android:color/transparent"
+			        android:dividerHeight="1px"
+			        android:divider="@color/line_color"
+			        android:layout_marginLeft="8dp"
+			        android:layout_marginRight="8dp"
+			        android:layout_marginTop="10dp"
+			        android:background="@drawable/bg_qushi_item"
+			        android:scrollbars="none" >
+			    </com.lling.qiqu.ui.LoadListView>
+            </LinearLayout>
+        </com.lling.qiqu.ui.Scroll2BottomListenerScrollView>
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_alignParentTop="true"
+	        android:background="@color/transparent_line_color" />
+	    
+	    <include 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        layout="@layout/comment_input_layout"/>
+    </RelativeLayout>
+
+</LinearLayout>

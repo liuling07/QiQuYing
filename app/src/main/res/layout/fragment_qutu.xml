@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.lling.qiqu.ui.LoadListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:divider="@android:color/transparent"
+	        android:scrollbars="vertical"
+	        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+	        android:scrollbarSize="3dp" >
+        </com.lling.qiqu.ui.LoadListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+	
+
+</LinearLayout>

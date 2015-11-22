@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">奇趣营</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="more_jingxuan">更多精选...</string>
+    <string name="more_qushi">更多趣事...</string>
+    <string name="more_qutu">更多趣图...</string>
+    <string name="more_meitu">更多美图...</string>
+    <string name="detail">详情</string>
+    <string name="has_ding">您已经顶过</string>
+    <string name="has_cai">您已经踩过</string>
+    <string name="click_login">点击登录</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="phone">手机</string>
+    <string name="password">密码</string>
+    <string name="login_qq">腾讯QQ登录</string>
+    <string name="login_sina">新浪微博登录</string>
+    <string name="regist_account">注册账号</string>
+    <string name="have_account">已有账号？</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="phone_null">手机号输入为空</string>
+    <string name="phone_invalid">请输入正确的手机号</string>
+    <string name="password_null">密码输入为空</string>
+    <string name="password_short">密码长度小于6</string>
+    <string name="logining">登录中...</string>
+    <string name="login_fail">登录失败</string>
+    <string name="no_account">账号不存在</string>
+    <string name="password_error">密码错误</string>
+    <string name="registing">注册中...</string>
+    <string name="phone_exists">此手机号已被注册</string>
+    <string name="regist_fail">注册失败</string>
+    <string name="no_net">无网络连接，请检查网络设置</string>
+    <string name="create_info">创建个人资料</string>
+    <string name="skip">跳过</string>
+    <string name="save">保存</string>
+    <string name="nick">昵称</string>
+    <string name="sex">性别</string>
+    <string name="sex_man">男</string>
+    <string name="sex_women">女</string>
+    <string name="set_portrait">设置头像</string>
+    <string name="set_portrait_fail">头像上传失败</string>
+    <string name="set_portrait_success">头像更新成功</string>
+    <string name="nick_null">请输入昵称</string>
+    <string name="set_nick_sex_fial">创建个人资料失败</string>
+    <string name="user_info">我的信息</string>
+    <string name="user_portrait">头像</string>
+    <string name="login_out">退出当前用户</string>
+    <string name="user_update_nickname_null">昵称不能为空</string>
+    <string name="comment_send">发送</string>
+    <string name="comment_hint">期待你的神评论</string>
+    <string name="comment_content_null">你还没有写评论哦</string>
+    <string name="commenting">发表评论中...</string>
+    <string name="comment_fail">评论失败</string>
+
+    <!-- 新浪微博 -->
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_hint">请输入您宝贵的意见，我们将努力不断改进！</string>
+    <string name="feedback_contact_hint">邮箱/手机（可不填）</string>
+    <string name="commit">提交</string>
+    <string name="content_null">请先输入您的意见哦！</string>
+    <string name="feedback_fail">提交反馈失败，请重试</string>
+    <string name="contact_invalid">请填写正确的联系方式哦（可不填）</string>
+    <string name="feedback_success">感谢您的反馈，我们会尽快处理</string>
+    <string name="mycollect">我的收藏</string>
+    <string name="share_title_qushi">分享一条搞笑段子，点击查看</string>
+    <string name="share_title_qutu">分享一张搞笑图片，点击查看</string>
+    <string name="share_title_meitu">分享一张美女图片，点击查看</string>
+    <string name="errcode_success">分享成功</string>
+    <string name="errcode_cancel">分享取消</string>
+    <string name="errcode_deny">授权失败</string>
+    <string name="errcode_unknown">未知错误</string>
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="password_set">密码（6-24位字母或数字）</string>
+    <string name="sms_check">短信验证</string>
+    <string name="check_code_hint">请输入收到的验证码</string>
+    <string name="input_phone_hint">请输入手机号</string>
+    <string name="next">下一步</string>
+    <string name="sms_hint"><Data>已向手机&lt;font color=#D43E37>%s&lt;/font>发送验证码</Data></string>
+    <string name="sina_appid">8f0c0eb426c6</string>
+    <string name="youmeng_appid">356b2dc28ba5a3e5984835a873eb7f2c</string>
+    <string name="sms_timer"><Data>重新获取 %s</Data></string>
+    <string name="sms_back">验证码短信发送可能略有延迟\n确定要取消此次验证吗？</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="phone_not_exists">此手机号未注册</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="input_pwd_hint">请输入密码</string>
+    <string name="input_pwd_hint1">请再次输入密码</string>
+    <string name="input_not_same">两次密码输入不一致</string>
+    <string name="doing">正在处理中...</string>
+    <string name="reset_pwd_fail">重置密码失败</string>
+    <string name="about">关于奇趣营</string>
+    
+    <string name="exit_hint">再按一次后退键退出奇趣营</string>
+    
+    <string name="input_invalide">输入内容非法</string>
+
+</resources>

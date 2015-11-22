@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout 
+        android:id="@+id/tu_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_hight"
+        android:background="@color/bg_action_bar_1">
+        <TextView 
+            android:id="@+id/skip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textSize="@dimen/qqy_14sp"
+            android:textColor="@color/dark_grey"
+            android:layout_marginLeft="12dp"
+            android:text="@string/skip"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/qqy_18sp"
+            android:textColor="@color/big_title"
+            android:text="@string/create_info"/>
+        <TextView 
+            android:id="@+id/save_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="@dimen/qqy_14sp"
+            android:textColor="@color/dark_grey"
+            android:layout_marginRight="12dp"
+            android:text="@string/save"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/transparent_line_color" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/set_portrait_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@drawable/set_portrait"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="@dimen/qqy_16sp"
+        android:textColor="@color/dark_grey"
+        android:text="@string/set_portrait"/>
+    
+    <com.lling.qiqu.ui.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:src="@drawable/default_portrait" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="36dp"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/qqy_16sp"
+			android:text="@string/nick" />
+        <EditText 
+            android:id="@+id/nick_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/big_title"
+            android:singleLine="true"
+            android:maxLength="12"
+            android:textSize="@dimen/qqy_16sp"
+            android:text=""/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+    <LinearLayout 
+        android:id="@+id/set_sex_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="36dp"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/qqy_16sp"
+			android:text="@string/sex" />
+        <TextView
+            android:id="@+id/sex_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/big_title"
+            android:textSize="@dimen/qqy_16sp"
+			android:text="@string/sex_man" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+</LinearLayout>

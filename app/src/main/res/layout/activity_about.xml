@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <RelativeLayout 
+        android:id="@+id/tu_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_hight"
+        android:background="@color/bg_action_bar_1">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/main_margin"
+            android:paddingRight="@dimen/main_margin"
+            android:src="@drawable/ic_back_selector"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/qqy_18sp"
+            android:textColor="@color/big_title"
+            android:text="@string/about"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="top"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color" >
+        <TextView 
+	        android:id="@+id/about_version"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_horizontal"
+	        android:textSize="@dimen/qqy_18sp"
+	        android:textColor="@color/dark_grey"
+	        android:text="奇趣营V1.0" />
+	    
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_launcher"
+	        android:layout_above="@id/about_version"
+	        android:layout_marginBottom="24dp"
+	        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

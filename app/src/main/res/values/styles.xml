@@ -1,0 +1,95 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Default" parent="@android:style/Theme.Light">
+        <item name="android:textColorPrimaryInverse">@android:color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">20.0sp</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="Default.NoTitleBar" parent="@style/Default">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Default.NoTitleBar.Fullscreen" parent="@style/Default.NoTitleBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+		<item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+	</style>
+	
+    <style name="main_radio_botton">
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:textSize">@dimen/qqy_12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/color_main_radiobutton</item>
+    </style>
+
+    <!-- 列表item昵称样式 -->
+    <style name="qqy_nickname" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/big_title</item>
+        <item name="android:textSize">@dimen/qqy_14sp</item>
+    </style>
+    
+    <!-- 列表item日期样式 -->
+    <style name="qqy_date" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/qqy_12sp</item>
+    </style>
+    <style name="qushi_content" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">@dimen/qqy_16sp</item>
+    </style>
+    <style name="dingcai" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dingcai_option_color_selector</item>
+        <item name="android:textSize">@dimen/qqy_12sp</item>
+    </style>
+    <style name="add_one_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/main_color_1</item>
+        <item name="android:textSize">@dimen/qqy_12sp</item>
+    </style>
+    
+    <style name="user_center_layout">
+         <item name="android:background">@drawable/layout_selector</item>
+    </style>
+    
+    <style name="CustomDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="dialogAnim" parent="android:Animation" mce_bogus="1">  
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>  
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>  
+    </style>
+    <style name="login_regist_eidt_style" parent="android:Widget.EditText">
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">@color/color_login_regist_edit</item>
+        <item name="android:textColorHint">@color/color_login_regist_edit</item>
+        <item name="android:textSize">@dimen/qqy_16sp</item>
+    </style>
+    
+    <!-- 分享pop字体样式 -->
+    <style name="share_text" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">@dimen/qqy_14sp</item>
+    </style>
+    <!-- 分享pop弹出动画样式 -->
+    <style name="inoutformbottom" parent="android:Animation" mce_bogus="1">  
+        <item name="android:windowEnterAnimation">@anim/option_entry_from_bottom</item>  
+        <item name="android:windowExitAnimation">@anim/option_leave_from_bottom</item>  
+    </style>
+    
+</resources>

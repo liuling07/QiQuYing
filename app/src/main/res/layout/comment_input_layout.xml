@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent_line_color" />
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:paddingTop="6dp"
+	    android:paddingBottom="6dp"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    android:background="@color/bg_color"
+	    android:focusable="true"    
+        android:focusableInTouchMode="true"  >
+	    <EditText
+	        android:id="@+id/content_et"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:maxLines="3"
+	        android:paddingLeft="4dp"
+	        android:paddingTop="6dp"
+	        android:paddingBottom="6dp"
+	        android:hint="@string/comment_hint"
+	        android:textSize="@dimen/qqy_16sp"
+	        android:textColorHint="@color/light_grey"
+	        android:textColor="@color/dark_grey"
+	        android:background="@drawable/bg_comment_edit">
+	    </EditText>
+	    <Button 
+	        android:id="@+id/add_comment_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="6dp"
+	        android:paddingBottom="6dp"
+	        android:layout_marginLeft="8dp"
+	        android:background="@drawable/bg_login_regist_btn_selector"
+	        android:textSize="@dimen/qqy_16sp"
+	        android:textColor="@color/white"
+	        android:text="@string/comment_send"/>
+	</LinearLayout>
+</LinearLayout>
